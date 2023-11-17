@@ -1,0 +1,106 @@
+// set-product.mongodb
+
+use("pet_store")
+
+// Actualizaciones para updateOne()
+
+db.products.updateOne(
+    { _id: 1 },
+    {
+      $set: {
+        price: 25.00,
+        image: "https://guamba.com/cdn/shop/products/Guamba_Producto-76_2048x2048.jpg?v=1695157468"
+      }
+    }
+  );
+
+  db.products.updateOne(
+    { _id: 3 },
+    {
+      $set: {
+        title: "Pañoleta",
+        price: 4.70,
+        image: "https://www.gordogs.com.co/wp-content/uploads/2020/05/pan%CC%83oleta-para-perro-skull-dog-BF-amarilla-calavera-rock-and-roll-bandana-.jpg"
+      }
+    }
+  );
+
+  db.products.updateOne(
+    { _id: 5 },
+    {
+      $set: {
+        price: 60.99,
+        image: "https://m.media-amazon.com/images/I/61tjOVpOoVL._AC_SL1500_.jpg"
+      }
+    }
+  );
+
+  db.products.updateOne(
+    { _id: 6 },
+    {
+      $set: {
+        price: 3.67,
+        image: "https://exitocol.vtexassets.com/arquivos/ids/7049735/frisbee-para-perros-grande-23cm-frisbi-disco-volador-verde.jpg?v=637514529115230000"
+      }
+    }
+  );
+
+  db.products.updateOne(
+    { _id: 7 },
+    {
+      $set: {
+        price: 4.99,
+        image: "https://www.konnenservice.co/wp-content/uploads/2022/06/713JHXyZS9L._AC_SX466_.jpg"
+      }
+    }
+  );
+
+  db.products.updateOne(
+    { _id: 9 },
+    {
+      $set: {
+        price: 89.99,
+        image: "https://http2.mlstatic.com/D_NQ_NP_829868-MCO54820849236_042023-O.webp"
+      }
+    }
+  );
+
+  db.products.updateOne(
+    { _id: 11 },
+    {
+      $set: {
+        price: 90.55,
+        image: "https://laika.com.co/cdn-cgi/image/fit=scale-down,width=400,format=auto,quality=80,onerror=redirect/https://laikapp.s3.amazonaws.com/dev_images_products/15735_HUACAL_PARA_MASCOTAS_PERRO/GATO_1596390763_1000x1000.jpg"
+      }
+    }
+  );
+
+  db.products.updateOne(
+    { _id: 12 },
+    {
+      $set: {
+        price: 89.99,
+        image: "https://image.chewy.com/is/image/catalog/521686_PT4._AC_SL1200_V1685464718_.jpg"
+      }
+    }
+  );
+
+  db.products.updateOne(
+    { _id: 13 },
+    {
+      $set: {
+        price: 85.99,
+        image: "https://image.chewy.com/is/image/catalog/842454_PT2._AC_SL1200_V1684348669_.jpg"
+      }
+    }
+  );
+
+  db.products.updateOne(
+    { _id: 10 },
+    {
+      $set: {
+        price: 499.99,
+        image: "https://image.chewy.com/is/image/catalog/257260_PT2._AC_SL1200_V1651423886_.jpg"
+      }
+    }
+);
